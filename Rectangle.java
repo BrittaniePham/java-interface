@@ -61,7 +61,15 @@ public class Rectangle implements Shape, Printable{
 
 	@Override
 	public void print() {
-		// TODO Auto-generated method stub
-		
+		for(int i = 1; i <= width; i++) {
+			for(int j = 1; j <= length; j++) {
+				if (i == 1 || i == width || j == 1 || j == length)             
+	                System.out.print("o ");             
+	            else
+	                System.out.print("  ");   
+			}
+			System.out.println();
+		}
+		System.out.println();
 	}	
 }
