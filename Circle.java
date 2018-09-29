@@ -34,13 +34,13 @@ public class Circle implements Shape{
 
 	@Override
 	public double perimeter() {
-		// TODO Auto-generated method stub
-		return 0;
+		double perim = 2 * Math.PI * getRadius();
+		return Math.round(perim * 10) / 10d;
 	}
 
 	@Override
 	public double area() {
-		// TODO Auto-generated method stub
-		return 0;
+		double area = Math.PI * getRadius() * getRadius();
+		return Math.round(area * 10) / 10d;
 	}
 }

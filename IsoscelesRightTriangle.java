@@ -55,13 +55,11 @@ public class IsoscelesRightTriangle implements Shape, Printable{
 
 	@Override
 	public double perimeter() {
-		// TODO Auto-generated method stub
-		return 0;
+		return getLeg() * 2 + hypotenuse();
 	}
 
 	@Override
 	public double area() {
-		// TODO Auto-generated method stub
-		return 0;
+		return (getLeg() * getLeg()) / 2.0;
 	}
 }

@@ -51,14 +51,12 @@ public class Rectangle implements Shape, Printable{
 
 	@Override
 	public double perimeter() {
-		// TODO Auto-generated method stub
-		return 0;
+		return 2 * (getLength() + getWidth());
 	}
 
 	@Override
 	public double area() {
-		// TODO Auto-generated method stub
-		return 0;
+		return getWidth() * getLength();
 	}
 
 	@Override

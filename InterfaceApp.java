@@ -14,5 +14,15 @@ public class InterfaceApp {
 				};
 		System.out.println("Shape Array: ");
 		System.out.println("------------");
+		
+		for(Shape shape : shapes) {
+			System.out.println(shape);
+			System.out.println("Perimeter: "+ shape.perimeter());
+			System.out.println("Area: " + shape.area());
+			if(shape instanceof Printable) {
+				((Printable) shape).print();
+			}
+			System.out.println();
+		}
 	}
 }
