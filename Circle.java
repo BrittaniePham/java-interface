@@ -6,7 +6,7 @@
 
 package a05_interface;
 
-public class Circle {
+public class Circle implements Shape{
 	private final int radius;
 	
 	public Circle(int radius) {
@@ -30,5 +30,17 @@ public class Circle {
 	@Override
 	public String toString() {
 		return getClass().getSimpleName() + "(" + getRadius() + ")";
+	}
+
+	@Override
+	public double perimeter() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public double area() {
+		// TODO Auto-generated method stub
+		return 0;
 	}
 }

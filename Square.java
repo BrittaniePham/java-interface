@@ -11,7 +11,7 @@ package a05_interface;
  * @author Brittanie Pham
  *
  */
-public class Square extends Rectangle{
+public class Square extends Rectangle implements Shape, Printable{
 
 	/**
 	 * constructor to initialize fields of a square

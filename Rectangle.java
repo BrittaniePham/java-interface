@@ -11,7 +11,7 @@ package a05_interface;
  * @author Brittanie Pham
  *
  */
-public class Rectangle {
+public class Rectangle implements Shape, Printable{
 	private final int length;
 	private final int width;
 	
@@ -47,5 +47,23 @@ public class Rectangle {
 	@Override
 	public String toString() {
 		return getClass().getSimpleName() + "(" + getLength() + "x" + getWidth() + ")";	
+	}
+
+	@Override
+	public double perimeter() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public double area() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public void print() {
+		// TODO Auto-generated method stub
+		
 	}	
 }

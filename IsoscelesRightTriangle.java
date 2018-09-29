@@ -11,7 +11,7 @@ package a05_interface;
  * @author Brittanie Pham
  *
  */
-public class IsoscelesRightTriangle {
+public class IsoscelesRightTriangle implements Shape, Printable{
 	private final int leg;
 	
 	/**
@@ -45,5 +45,23 @@ public class IsoscelesRightTriangle {
 	@Override
 	public String toString() {
 		return getClass().getSimpleName() + "(" + getLeg() + ")";	
+	}
+
+	@Override
+	public void print() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public double perimeter() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public double area() {
+		// TODO Auto-generated method stub
+		return 0;
 	}
 }
